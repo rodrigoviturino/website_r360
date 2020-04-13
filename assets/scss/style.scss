@@ -4,11 +4,18 @@
 /* end Boostrap 4 */
 
 /* Website */
-    /* Pages */
-    @import "page/home";
 
+    @import "base/reset";
+    @import "base/font";
+    @import "global";
+    
     @import "header";
     @import "footer";
+    
+    /* Pages */
+    @import "page/home";
+    @import "page/sidebar-home";
+
 
 /* end Website */
 

@@ -1,3 +1,48 @@
-body {
-    background-color: gray;
+.header{
+    border-top: solid 4px #fc993d;
+    padding: map-get($spacers, 4);
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+        
+            &-logo {
+                transition: all 0.7s;
+
+                &:hover {
+                    transition: all 0.7s;
+                    opacity: 0.7;
+                }
+            }
+
+            &-menu {
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        color: #333a65;
+                        text-decoration: none;
+                        transition: all 0.7s;
+                        font-weight: 400;
+                        padding: 0 map-get($spacers, 2);
+                        margin: 0 map-get($spacers, 3);
+                        @include responsive-font-size(17px);
+
+                        &:hover {
+                            background-color: #c9c9c9;
+                            transition: all 0.7s;
+                        }
+                    }
+                }
+            }
+    }
 }
