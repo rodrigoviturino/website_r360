@@ -1,0 +1,14 @@
+/* Boostrap 4 */
+    @import "./bootstrap/bootstrap-grid.scss";
+    @import "./bootstrap/bootstrap-reboot.scss";
+/* end Boostrap 4 */
+
+/* Website */
+    /* Pages */
+    @import "page/home";
+
+    @import "header";
+    @import "footer";
+
+/* end Website */
+

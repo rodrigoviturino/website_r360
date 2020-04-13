@@ -1,0 +1,4 @@
+--- Sites estáticos
+    browser-sync start --server --files "css/*.css"
+--- Sites Dinâmicos
+    browser-sync start --proxy "myproject.dev" --files "css/*.css"
