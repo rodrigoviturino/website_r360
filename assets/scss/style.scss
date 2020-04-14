@@ -1,11 +1,11 @@
 /* Boostrap 4 */
-    @import "./bootstrap/bootstrap-grid.scss";
-    @import "./bootstrap/bootstrap-reboot.scss";
+@import "./bootstrap/bootstrap-grid.scss";
+@import "./bootstrap/bootstrap-reboot.scss";
+@import "base/reset";
 /* end Boostrap 4 */
 
 /* Website */
 
-    @import "base/reset";
     @import "base/font";
     @import "global";
     
@@ -15,6 +15,8 @@
     /* Pages */
     @import "page/home";
     @import "page/sidebar-home";
+
+    /**/
 
 
 /* end Website */
