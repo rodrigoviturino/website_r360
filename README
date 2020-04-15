@@ -1,4 +1,5 @@
 --- Sites estáticos
-    browser-sync start --server --files "css/*.css"
+    browser-sync start --server --files "*.html" "*.css"
+    sass --watch --no-source-map style.scss:../../style.css
 --- Sites Dinâmicos
     browser-sync start --proxy "myproject.dev" --files "css/*.css"

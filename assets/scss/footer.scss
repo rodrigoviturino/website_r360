@@ -1,0 +1,117 @@
+.footer{
+
+    &__about {
+        .logo {
+            display: block;
+            margin-bottom: map-get($spacers, 3);
+        }
+        .text {
+            font-weight: $font-weight-normal;
+            color: #2B3156;
+            @include responsive-font-size(14px);
+        }
+
+        .rede-social {
+            display: flex;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    list-style: none;
+                    background-color: #2B3156;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    border-radius: 50px;
+                    vertical-align: middle;
+                    height: 40px;
+                    width: 40px;
+                    border: solid 1px transparent;
+                    transition: all 0.7s;
+                    margin: 0 map-get($spacers, 3);
+
+                    &:hover {
+                        background-color: #fff;
+                        color: #2B3156;
+                        border: solid 2px #2B3156;
+                        transition: all 0.7s;
+
+                        i {
+                            color: #2B3156;
+                            transition: all 0.7s;
+                        }
+                    }
+
+                    i {
+                        color: #fff;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    &__links {
+        .title {
+            color: #2B3156;
+            font-weight: $font-weight-bold;
+            margin-bottom: map-get($spacers, 3);
+            @include responsive-font-size(25px);
+        }
+
+        .group {
+            li {
+                a {
+                    color: #2B3156;
+                    text-decoration: none;
+                    @include responsive-font-size(14px);
+
+                    &:hover {
+                        color: rgb(83, 93, 158);
+                    }
+                }
+            }
+        }
+    }
+
+    &__newsletter {
+        .title {
+            color: #2B3156;
+            font-weight: $font-weight-bold;
+            margin-bottom: map-get($spacers, 3);
+            @include responsive-font-size(25px);
+        }
+    }
+
+    &__feed {
+        .title {
+            color: #2B3156;
+            font-weight: $font-weight-bold;
+            margin-bottom: map-get($spacers, 3);
+            @include responsive-font-size(25px);
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                display: flex;
+                flex-wrap: wrap;
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+
+    }
+
+}
