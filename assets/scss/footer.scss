@@ -1,0 +1,230 @@
+.footer{
+    background-image: url('assets/images/bg-footer.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 80px 0 20px;
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: #0b0e1ca8;
+        width: 100%;
+    }
+
+    &__wrapper {
+        padding-bottom: map-get($spacers, 5);
+
+    &__about {
+        z-index: 1;
+        .logo {
+            display: block;
+            margin-bottom: map-get($spacers, 3);
+        }
+        .text {
+            font-weight: $font-weight-normal;
+            color: $white;
+            margin-bottom: map-get($spacers, 3);
+            @include responsive-font-size(14px);
+        }
+
+        .rede-social {
+            display: flex;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    list-style: none;
+                    background-color: #2B3156;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    border-radius: 50px;
+                    vertical-align: middle;
+                    height: 40px;
+                    width: 40px;
+                    border: solid 1px transparent;
+                    transition: all 0.7s;
+                    margin-right: map-get($spacers, 3);
+
+                    &:hover {
+                        background-color: $white;
+                        color: #2B3156;
+                        border: solid 2px #2B3156;
+                        transition: all 0.7s;
+
+                        i {
+                            color: #2B3156;
+                            transition: all 0.7s;
+                        }
+                    }
+
+                    i {
+                        color: $white;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    &__links {
+        z-index: 1;
+        .title {
+            color: $white;
+            font-weight: $font-weight-bold;
+            margin-bottom: map-get($spacers, 3);
+            @include responsive-font-size(25px);
+        }
+
+        .group {
+            li {
+                padding: map-get($spacers, 1) 0;
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    position: relative;
+                    margin: map-get($spacers, 2) 0  0 map-get($spacers , 2);
+                    @include responsive-font-size(14px);
+
+                    &:hover {
+                        color: rgb(83, 93, 158);
+                    }
+
+                    &:before{
+                        content: '>';
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        top: -1px;
+                        left: -15px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    &__newsletter {
+        z-index: 1;
+        .title {
+            color: $white;
+            font-weight: $font-weight-bold;
+            margin-bottom: map-get($spacers, 3);
+            @include responsive-font-size(25px);
+        }
+
+        form {
+
+            label {
+                font-weight: $font-weight-normal;
+                color: $white;
+                margin-bottom: map-get($spacers , 2);
+                @include responsive-font-size(16px);
+            }
+
+            input {
+                background-color: $white;
+                color: $black;
+                width: 100%;
+                font-weight: 400;
+                border: solid 1px $white;
+                margin-bottom: map-get($spacers, 3);
+                padding: map-get($spacers, 2) map-get($spacers, 3);
+                @include responsive-font-size(13px);
+            }
+
+            button {
+                border: solid 2px $white;
+                background-color: transparent;
+                color: $white;
+                padding: map-get($spacers, 1) map-get($spacers, 4);
+                font-weight: $font-weight-normal;
+                transition: all 0.7s;
+                @include responsive-font-size(16px);
+
+                &:hover {
+                    background-color: #2B3156;
+                    border-color: #2B3156;
+                    transition: all 0.7s;
+                }
+            }
+        }
+    }
+
+    &__feed {
+        z-index: 1;
+        .title {
+            color: #fff;
+            font-weight: $font-weight-bold;
+            margin-bottom: map-get($spacers, 3);
+            @include responsive-font-size(25px);
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                display: flex;
+                flex-wrap: wrap;
+                margin: map-get($spacers, 1);
+
+                a {
+                    
+                    img {
+                        width: 77px;
+                        border-radius: 13px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+    }
+
+    &__copyright {
+        display: flex;
+
+        &__wrapper {
+            display: flex;
+            border-top: solid 1px #ffffff88;
+            padding-top: map-get($spacers, 3);
+
+            &-text {
+                color: $white;
+                display: inline;
+                z-index: 1;
+            }
+
+            &-menu {
+                display: flex;
+                margin-left: auto;
+                z-index: 1;
+
+                li {
+
+                    a {
+                        text-decoration: none;
+                        margin: 0 map-get($spacers, 2);
+                        color: $white;
+                        cursor: pointer;
+                        font-weight: $font-weight-normal;
+                    }
+                }
+            }
+        }
+    }
+
+}
