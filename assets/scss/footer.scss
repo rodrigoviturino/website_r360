@@ -27,8 +27,12 @@
         }
         .text {
             font-weight: $font-weight-normal;
+<<<<<<< HEAD
             color: $white;
             margin-bottom: map-get($spacers, 3);
+=======
+            color: #2B3156;
+>>>>>>> 60d589dd50b425d3582f1aa71d92a0462d79366f
             @include responsive-font-size(14px);
         }
 
@@ -53,10 +57,17 @@
                     width: 40px;
                     border: solid 1px transparent;
                     transition: all 0.7s;
+<<<<<<< HEAD
                     margin-right: map-get($spacers, 3);
 
                     &:hover {
                         background-color: $white;
+=======
+                    margin: 0 map-get($spacers, 3);
+
+                    &:hover {
+                        background-color: #fff;
+>>>>>>> 60d589dd50b425d3582f1aa71d92a0462d79366f
                         color: #2B3156;
                         border: solid 2px #2B3156;
                         transition: all 0.7s;
@@ -68,7 +79,11 @@
                     }
 
                     i {
+<<<<<<< HEAD
                         color: $white;
+=======
+                        color: #fff;
+>>>>>>> 60d589dd50b425d3582f1aa71d92a0462d79366f
                     }
 
 
@@ -78,9 +93,14 @@
     }
 
     &__links {
+<<<<<<< HEAD
         z-index: 1;
         .title {
             color: $white;
+=======
+        .title {
+            color: #2B3156;
+>>>>>>> 60d589dd50b425d3582f1aa71d92a0462d79366f
             font-weight: $font-weight-bold;
             margin-bottom: map-get($spacers, 3);
             @include responsive-font-size(25px);
@@ -88,17 +108,24 @@
 
         .group {
             li {
+<<<<<<< HEAD
                 padding: map-get($spacers, 1) 0;
                 a {
                     color: $white;
                     text-decoration: none;
                     position: relative;
                     margin: map-get($spacers, 2) 0  0 map-get($spacers , 2);
+=======
+                a {
+                    color: #2B3156;
+                    text-decoration: none;
+>>>>>>> 60d589dd50b425d3582f1aa71d92a0462d79366f
                     @include responsive-font-size(14px);
 
                     &:hover {
                         color: rgb(83, 93, 158);
                     }
+<<<<<<< HEAD
 
                     &:before{
                         content: '>';
@@ -110,19 +137,27 @@
                         left: -15px;
                         color: #fff;
                     }
+=======
+>>>>>>> 60d589dd50b425d3582f1aa71d92a0462d79366f
                 }
             }
         }
     }
 
     &__newsletter {
+<<<<<<< HEAD
         z-index: 1;
         .title {
             color: $white;
+=======
+        .title {
+            color: #2B3156;
+>>>>>>> 60d589dd50b425d3582f1aa71d92a0462d79366f
             font-weight: $font-weight-bold;
             margin-bottom: map-get($spacers, 3);
             @include responsive-font-size(25px);
         }
+<<<<<<< HEAD
 
         form {
 
@@ -166,6 +201,13 @@
         z-index: 1;
         .title {
             color: #fff;
+=======
+    }
+
+    &__feed {
+        .title {
+            color: #2B3156;
+>>>>>>> 60d589dd50b425d3582f1aa71d92a0462d79366f
             font-weight: $font-weight-bold;
             margin-bottom: map-get($spacers, 3);
             @include responsive-font-size(25px);
@@ -178,6 +220,7 @@
             li {
                 display: flex;
                 flex-wrap: wrap;
+<<<<<<< HEAD
                 margin: map-get($spacers, 1);
 
                 a {
@@ -187,11 +230,16 @@
                         border-radius: 13px;
                         display: inline-block;
                     }
+=======
+                img {
+                    width: 50%;
+>>>>>>> 60d589dd50b425d3582f1aa71d92a0462d79366f
                 }
             }
         }
     }
 
+<<<<<<< HEAD
     }
 
     &__copyright {
@@ -225,6 +273,10 @@
                 }
             }
         }
+=======
+    &__copyright {
+
+>>>>>>> 60d589dd50b425d3582f1aa71d92a0462d79366f
     }
 
 }
