@@ -393,5 +393,80 @@
     }
 }
 /* end CTA Slide */
+.imc {
+    background-color: gray;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
 
+    &__form {
+        max-width: 700px;
+        background-color: #222232;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 40px;
+        margin: 0 auto;
+
+        .block-title{
+            padding: map-get($spacers, 4);
+
+            h2 {
+                color: $white;
+                text-align: center;
+                font-weight: $font-weight-normal;
+                @include responsive-font-size(30px);
+            }
+
+            p {
+                color: $white;
+                text-align: center;
+                font-weight: $font-weight-light;
+                @include responsive-font-size(16px);
+            }
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            
+            .group {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin: 10px 0;
+            }
+
+            label {
+                color: $white;
+            }
+
+            input {
+                display: block;
+                width: 100%;
+            }
+
+            button {
+                border: solid 1px transparent;
+                background-color: brown;
+                color: $white;
+                display: block;
+                text-align: center;
+                margin: map-get($spacers, 4) auto;
+                transition: all 0.7s;
+                padding: map-get($spacers, 2) map-get($spacers, 5);
+
+                &:hover {
+                    background-color: $white;
+                    transition: all 0.7s;
+                    color: brown;
+                    border: solid 1px brown;
+                }
+            }
+            
+        }
+    }
+}
 /* end Content */
