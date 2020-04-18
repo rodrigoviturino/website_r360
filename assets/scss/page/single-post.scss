@@ -1,0 +1,136 @@
+.singlePost{
+
+    &__banner {
+        background-image: url('assets/images/bg-t2.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+        position: relative;
+    }
+
+    &__main {
+        padding: map-get($spacers, 5);
+        position: relative;
+
+        &__article {
+
+            .brager {
+                ul {
+                    width: 100%;
+                    height: auto;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: map-get($spacers, 3) 0;
+                        width: 100%;
+                        height: auto;
+                        
+                        a {
+                            border-radius: 100px;
+                            border: solid 1px $orange;
+                            height: 33px;
+                            width: 33px;
+                            text-decoration: none;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: $white;
+                            background-color: $orange;
+                            transition: all 0.7s;
+                            @include responsive-font-size(14px);
+
+                            &:hover {
+                                transition: all 0.7s;
+                                color: $orange;
+                                border: solid 1px $black;
+                                background-color: $black;
+                            }
+                        }
+
+                        p {
+                            color: $orange;
+                            transform: rotate(-90deg);
+                            font-weight: 300;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            margin-top: 80px;
+                            justify-content: flex-end;
+                            flex-direction: row-reverse;
+                            @include responsive-font-size(16px);
+
+                            &:before{
+                                content: '';
+                                background-color: #fd7e144f;
+                                width: 60px;
+                                height: 1px;
+                                display: inline-block;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .text {
+                color: rgba(0,0,0,0.7);
+                line-height: 1.8em;
+                font-weight: 400;
+                margin-bottom: map-get($spacers, 4);
+                font-family: 'Roboto', sans-serif;
+                @include responsive-font-size(16px);
+            }
+
+            /* Posts Relacionados */
+            &__related {
+
+                .pages {
+                    color: rgba(34,34,34,0.5);
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    cursor: pointer;
+                    padding: map-get($spacers, 3) 0;
+                    @include responsive-font-size(12px);
+
+                    &:hover {
+                        color: #000;
+                    }
+
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+
+                .group {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    li {
+                        display: flex;
+
+                        p {
+                            color: #292929;
+                            margin-left: map-get($spacers, 2);
+                            font-family: 'Poppis', sans-serif;
+                            font-weight: 500;
+                            @include responsive-font-size(16px);
+                        }
+
+                        img {
+                            width: 85%;
+                        }
+                    }
+                }
+            }
+            /* end Posts Relacionados */
+
+        }
+
+    }
+
+}
