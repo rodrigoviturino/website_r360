@@ -8,6 +8,41 @@
         height: 500px;
         width: 100%;
         position: relative;
+
+        .block-title {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column;
+            flex-wrap: wrap;
+            color: $white;
+            position: absolute;
+            top: -50px;
+            left: 0;
+            right: 0;
+            bottom: 0px;
+            width: 100%;
+            height: 100%;
+
+                span {
+                    display: inline-block;
+                    color: $white;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    background-color: #dc191b;
+                    padding: map-get($spacers, 1) map-get($spacers, 2);
+                    margin-bottom: map-get($spacers, 4);
+                    @include responsive-font-size(14px);
+                }
+
+                h2 {
+                    color: $white;
+                    font-weight: 800;
+                    color: $white;
+                    text-transform: capitalize;
+                    @include responsive-font-size(30px);
+                }
+        }
     }
 
     &__main {
@@ -88,46 +123,137 @@
             /* Posts Relacionados */
             &__related {
 
-                .pages {
-                    color: rgba(34,34,34,0.5);
-                    text-transform: uppercase;
-                    font-weight: 500;
-                    cursor: pointer;
-                    padding: map-get($spacers, 3) 0;
-                    @include responsive-font-size(12px);
+                .previous-post {
+                    position: relative;
 
-                    &:hover {
-                        color: #000;
+                    &:after{
+                        content: '';
+                        display: inline-block;
+                        background-color:#ddd;
+                        height: 110px;
+                        width: 1px;
+                        position: absolute;
+                        top: 50px;
+                        right: 0;
                     }
 
-                    i {
-                        margin-right: 10px;
-                    }
-                }
+                    &-pages {
+                        color: rgba(34,34,34,0.5);
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        cursor: pointer;
+                        padding: map-get($spacers, 3) 0;
+                        @include responsive-font-size(12px);
 
-                .group {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    li {
-                        display: flex;
-
-                        p {
-                            color: #292929;
-                            margin-left: map-get($spacers, 2);
-                            font-family: 'Poppis', sans-serif;
-                            font-weight: 500;
-                            @include responsive-font-size(16px);
+                        &:hover {
+                            color: #000;
                         }
 
-                        img {
-                            width: 85%;
+                        i {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    &-group {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        li {
+                            display: flex;
+
+                            h3 {
+                                color: #292929;
+                                font-family: 'Poppis', sans-serif;
+                                font-weight: 500;
+                                @include responsive-font-size(16px);
+                            }
+
+                            img {
+                                max-width: 85%;
+                                margin-right: map-get($spacers, 2);
+                            }
+                        }
+                    }
+
+                }
+
+                .next-post {
+
+                    &-pages {
+                        color: rgba(34,34,34,0.5);
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        text-align: right;
+                        cursor: pointer;
+                        padding: map-get($spacers, 3) 0;
+                        @include responsive-font-size(12px);
+
+                        &:hover {
+                            color: #000;
+                        }
+
+                        i {
+                            margin-left: 10px;
+                        }
+                    }
+
+                    &-group {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        li {
+                            display: flex;
+                            
+                            h3 {
+                                color: #292929;
+                                font-family: 'Poppis', sans-serif;
+                                font-weight: 500;
+                                @include responsive-font-size(16px);
+                            }
+
+                            img {
+                                max-width: 85%;
+                                margin-left: map-get($spacers, 2);
+                            }
+                        }
+                        
+
+                    }
+
+                }
+
+
+            }
+            /* end Posts Relacionados */
+
+            /* Comentarios */
+            &__comments {
+
+                .form {
+
+                    &-btn {
+                        background-color: #dc191b;
+                        color: $white;
+                        border: solid 1px transparent;
+                        border-radius: 50px;
+                        padding: map-get($spacers, 2) map-get($spacers, 4);
+                        font-weight: 400;
+                        text-transform: capitalize;
+                        transition: all 0.7s;
+                        @include responsive-font-size(16px);
+
+                        &:hover {
+                            background-color: $white;
+                            border: solid 1px #dc191b;
+                            color: #dc191b;
+                            transition: all 0.7s;
                         }
                     }
                 }
             }
-            /* end Posts Relacionados */
+            /* end Comentarios */
 
         }
 

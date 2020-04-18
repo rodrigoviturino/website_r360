@@ -6,3 +6,11 @@ body {
 .divisor-internal {
     padding: 15px 0;
 }
+
+.divisor {
+    height: 0.7px;
+    width: 100%;
+    margin: map-get($spacers, 1) 0;
+    display: inline-block;
+    background-color: #ddd;
+}

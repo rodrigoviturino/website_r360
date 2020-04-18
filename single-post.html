@@ -8,54 +8,53 @@
     <title>Site R360</title>
 </head>
 <body>
-<!-- Header -->
-<header class="header">
-    <section class="header__borderTop"></section>
+    <header class="header">
+        <section class="header__borderTop"></section>
 
-    <nav class="header__wrapper">
-        <div class="container">
-                
-                <a href="#" class="header__wrapper-logo">
-                    <img src="assets/images/logo.png" alt="Logo Empresa">
-                </a>
+        <nav class="header__wrapper">
+            <div class="container">
+                    
+                    <a href="#" class="header__wrapper-logo">
+                        <img src="assets/images/logo.png" alt="Logo Empresa">
+                    </a>
 
-                <ul class="header__wrapper-menu">
-                    <li>
-                        <a href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Serviços
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Contato
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Blog
-                        </a>
-                    </li>
-                </ul>
+                    <ul class="header__wrapper-menu">
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="single-post.html">
+                                Single Post
+                            </a>
+                        </li>
+                        <li>
+                            <a href="category.html">
+                                Categoria
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Contato
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
 
-                <a href="#" class="header__wrapper-search">
-                    <i class="fas fa-search"></i>
-                </a>
+                    <a href="#" class="header__wrapper-search">
+                        <i class="fas fa-search"></i>
+                    </a>
 
-            </div>
+                </div>
 
-    </nav>
+        </nav>
 
-</header>
+    </header>
 <!-- end Header -->
 
 <!-- Content -->
@@ -123,41 +122,91 @@
                                 <p class="text">Brought together fourth also fowl very creeping may his was blessed fowl without let fourth. Fish, morning saying. That may from seed over one blessed male lesser abundantly his. For lesser signs. Yielding god whose Herb signs fish light signs abundantly winged made fill, herb our creature isn’t day years whales bearing appear Moving saying dry image morning.</p>
                                 <p class="text">Him midst female fourth one day divide Creepeth Lesser he forth, so Wherein. Doesn’t whose meat creeping forth let, blessed there upon saw. Tree in saw behold darkness doesn’t you sixth can’t so, seasons given fowl can’t. Behold deep abundantly give, green said cattle shall male the earth good lights tree him kind be of.</p>
 
-<hr>
+                                <span class="divisor"></span>
+
                                 <!-- Posts Relacionados -->
                                 <section class="singlePost__main__article__related">                                
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <p class="pages"> <i class="fas fa-arrow-left"></i> Previous Post</p>
-                                            <ul class="group">
+
+                                        <div class="col-md-6 previous-post">
+
+                                            <p class="previous-post-pages"> <i class="fas fa-arrow-left"></i> Previous Post</p>
+                                            
+                                            <ul class="previous-post-group">
                                                 <li>
                                                     <a href="#">
                                                         <img src="assets/images/card-post.jpg" alt="">
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <p>The Argument For Short Meditations</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p> Next Post <i class="fas fa-arrow-right"></i> </p>
-                                            <ul>
-                                                <li>
                                                     <a href="#">
-                                                        <img src="assets/images/card-post.jpg" alt="">
+                                                        <h3>The Argument For Short Meditations</h3>
                                                     </a>
-                                                </li>
-                                                <li>
-                                                    <p>The Argument For Short Meditations</p>
                                                 </li>
                                             </ul>
                                         </div>
 
+                                        <div class="next-post col-md-6">
+                                            <div class="next-post">
+                                                <p class="next-post-pages">
+                                                    Next Post 
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </p>
+                                                <ul class="next-post-group">
+                                                    <li>
+                                                        <h3>The Argument For Short Meditations</h3>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/card-post2.jpg" alt="">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                         
                                     </div>
                                 </section>
                                 <!-- end Posts Relacionados -->
+
+                                <!-- Comments -->
+                                <section class="singlePost__main__article__comments">
+                                    <h3>Leave a reply</h3>
+
+                                    <form action="#" class="form">
+                                        <p>Your email address will not be published. Required fields are marked *</p>
+
+                                        <div>
+                                            <label for="comentario">Comentário</label>
+                                            <textarea cols="45" rows="8"></textarea>
+                                        </div>
+
+                                        <div>
+                                            <label for="nome">Nome *</label>
+                                            <input type="text" name="nome">
+                                        </div>
+
+                                        <div>
+                                            <label for="email">Email *</label>
+                                            <input type="email" name="email">
+                                        </div>
+
+                                        <div>
+                                            <label for="website">Website</label>
+                                            <input type="text" name="website">
+                                        </div>
+
+                                        <div>
+                                            <input type="checkbox">
+                                            <label for="checkbox">Save my name, email, and website in this browser for the next time I comment.</label>
+                                        </div>
+
+                                        <button type="submit" class="form-btn">Enviar Comentário</button>
+
+                                    </form>
+
+                                </section>
+                                <!-- end Comments -->
 
                             </div>
                         
@@ -166,12 +215,13 @@
 
                 </section>
 
-                <aside class="col-md-4 singlePost__aside-home">
-                    <div class="singlePost__aside-home__block-title">
+                
+                <aside class="col-md-4 category__posts__aside-home">
+                    <div class="category__posts__aside-home__block-title">
                         <h2>Find your class</h2>
                     </div>
         
-                    <section class="singlePost__aside-home-wrapper">
+                    <section class="category__posts__aside-home-wrapper">
                         <!-- Item Post -->
                         <div class="posts">
         
@@ -218,12 +268,12 @@
                         <!-- end Item Post -->
                     </section>
         
-                    <section class="singlePost__aside-home-category">
+                    <section class="category__posts__aside-home-category">
         
                         <div class="block-title">
-                            <h2 class="title">Latest Category</h2>
+                            <h2 class="title">Categories</h2>
                         </div>
-        
+
                         <ul>
                             <li>
                                 <a href="#">Lifestyle</a>
@@ -239,14 +289,6 @@
         
                             <li>
                                 <a href="#">Travel</a>
-                            </li>
-        
-                            <li>
-                                <a href="#">Uncategorised</a>
-                            </li>
-        
-                            <li>
-                                <a href="#">Public</a>
                             </li>
         
                         </ul>
