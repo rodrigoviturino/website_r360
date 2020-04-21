@@ -3,3 +3,20 @@
     sass --watch --no-source-map style.scss:../../style.css
 --- Sites Dinâmicos
     browser-sync start --proxy "myproject.dev" --files "css/*.css"
+    browser-sync start --proxy "r360.test" --files "**/*.php" "*.php" "*.css"
+
+
+ <?php //
+                    //$all_categories = get_categories();
+                    // $term = get_field('img_cat_sidebar');
+
+                        //foreach($all_categories as $categories_item) : ?>
+                    <!-- <li style="background-image: url('<?=// get_field('img_cat_sidebar', 5); ?>'); ">
+                        <a href="<?=// $categories_item->term_id ?>"> 
+                            <?=// $categories_item->name ?>
+                        </a>
+                    </li> -->
+
+                <?php    
+                    // endforeach;
+                ?>

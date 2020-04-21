@@ -22,8 +22,16 @@
     &__about {
         z-index: 1;
         .logo {
+            width: 85px;
+            height: 85px;
+            // margin: 0 auto;
             display: block;
             margin-bottom: map-get($spacers, 3);
+
+            &:hover {
+                transition: all 0.7s;
+                filter: grayscale(0.8);
+            }
         }
         .text {
             font-weight: $font-weight-normal;

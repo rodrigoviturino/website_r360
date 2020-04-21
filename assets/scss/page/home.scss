@@ -1,5 +1,5 @@
 .banner-home {
-    background-image: url(/assets//images/bg-banner-01.jpg);
+    // background-image: url(/assets//images/bg-banner-01.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -73,11 +73,11 @@
 
 /* Session Objective */
 .post-objective {
-    padding-bottom: map-get($spacers, 5);
+    padding: map-get($spacers, 5) 0;
     
     // Title
     &__block-title {
-        padding: map-get($spacers, 5) 0 map-get($spacers, 5);
+        padding: 0 0 map-get($spacers, 5);
         h2 {
             text-align: left;
             position: relative;
@@ -169,121 +169,176 @@
     }
     //end Cards
 
-/* Aside-Home */
-&__aside-home {
-
-    // Title
-    &__block-title {
-        padding: map-get($spacers, 5) 0;
-        h2 {
-            text-align: left;
-            position: relative;
-            color: #2a2f52;
-            padding-left: 20px;
-            text-transform: uppercase;
-            font-weight: $font-weight-bold;
-            @include responsive-font-size(30px);
-
-            &::before {
-                content: '';
-                display: block;
-                background-color: #fda300;
-                position: absolute;
-                left: 0;
-                height: 50px;
-                width: 3px;
-            }
-        }
-    }
-
-    // Aside Posts
-    &-wrapper {
-        .posts {
-            display: flex;
-            align-self: center;
-            justify-content: center;
-            margin: map-get($spacers, 3) 0;
-
-            .image {
-                
-                max-width: 30%;
-
-
-                img {
-                    transition: all ease-in-out 0.5s;
-                }
-            }
-
-            .infos {
-                margin-left: map-get($spacers, 3);
-        
-                .title {
-                    color: #333a65;
-                    font-weight: $font-weight-bold;
-                    @include responsive-font-size(18px);
-                }
-                .text {
-                    color: #333a65;
-                    padding-top: map-get($spacers, 2);
-                    font-weight: $font-weight-normal;
-                    @include responsive-font-size(14px);
-                }
-            }
-        }
-    }
-
-    &-category {
+    /* Aside-Home */
+    &__aside-home {
 
         // Title
-        .block-title {
-            padding: map-get($spacers, 5) 0 map-get($spacers, 3);
-
-            .title {
+        &__block-title {
+            // padding: map-get($spacers, 5) 0;
+            h2 {
                 text-align: left;
                 position: relative;
                 color: #2a2f52;
-                text-transform: capitalize;
+                padding-left: 20px;
+                text-transform: uppercase;
                 font-weight: $font-weight-bold;
-                @include responsive-font-size(25px);
+                @include responsive-font-size(30px);
+
+                &::before {
+                    content: '';
+                    display: block;
+                    background-color: #fda300;
+                    position: absolute;
+                    left: 0;
+                    height: 50px;
+                    width: 3px;
+                }
             }
         }
 
-        ul {
-            li {
-                padding: map-get($spacers, 3);
-                border-bottom: 1px dashed rgb(201, 201, 201);
-                
-                a {
-                    color: #265987;
-                    text-decoration: none;
-                    position: relative;
-                    // padding: map-get($spacers, 4);
-                    padding-left: 15px;
-                    transition: all 0.5s;
-                    @include responsive-font-size(16px);
+        // Aside Posts
+        &-wrapper {
+            .posts {
+                display: flex;
+                align-self: center;
+                justify-content: center;
+                margin: map-get($spacers, 3) 0;
 
-                    &:hover {
-                        background-color: #1a4a74;
-                        color: #fff;
-                        transition: all 0.6s;
+                .image {
+                    
+                    max-width: 30%;
+
+
+                    img {
+                        transition: all ease-in-out 0.5s;
                     }
+                }
 
-                    &:before {
-                        content: '\25b6';
-                        display: block;
-                        position: absolute;
-                        left: 0;
-                        top: 3px;
-                        @include responsive-font-size(12px);
+                .infos {
+                    margin-left: map-get($spacers, 3);
+            
+                    .title {
+                        color: #333a65;
+                        font-weight: $font-weight-bold;
+                        @include responsive-font-size(18px);
+                    }
+                    .text {
+                        color: #333a65;
+                        padding-top: map-get($spacers, 2);
+                        font-weight: $font-weight-normal;
+                        @include responsive-font-size(14px);
                     }
                 }
             }
-            
         }
 
+        &-category {
+
+            // Title
+            .block-title {
+                padding: map-get($spacers, 5) 0 map-get($spacers, 3);
+
+                .title {
+                    text-align: left;
+                    position: relative;
+                    color: #2a2f52;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    @include responsive-font-size(25px);
+                }
+            }
+
+            ul {
+
+                li {
+                    padding: map-get($spacers, 3);
+                    // background-image: url('assets/images/bg-categoria.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    min-height: 120px;
+                    width: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    border-bottom: 1px dashed rgb(201, 201, 201);
+                    transition: all 0.7s;
+                    position: relative;
+                    margin-bottom: map-get($spacers, 3);
+
+
+                    &:before {
+                        content: '';
+                        display: none;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        transition: all 0.7s;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background-color: #000;
+                        position: absolute;
+                    }
+
+                        &:hover {
+                            position: relative;
+                            transition: all 0.7s;
+                            
+                            &:before {
+                                content: '';
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                transition: all 0.7s;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                background-color: rgba(0, 0, 0, 0.274);
+                                position: absolute;
+                            }
+
+                            a {
+                                background-color: $white;
+                                color: #dc191b;
+                                border: solid 1px #dc191b;
+                                transition: all 0.7s;
+                            }
+                        }
+                        
+                    a {
+                        color: $white;
+                        background-color: #dc191b;
+                        text-decoration: none;
+                        position: relative;
+                        font-weight: 700;
+                        padding: map-get($spacers, 1) map-get($spacers, 2);
+                        transition: all 0.5s;
+                        @include responsive-font-size(16px);
+
+                        // &:hover {
+                        //     background-color: #1a4a74;
+                        //     color: #fff;
+                        //     transition: all 0.6s;
+                        // }
+
+                        // &:before {
+                        //     content: '\25b6';
+                        //     display: block;
+                        //     position: absolute;
+                        //     left: 0;
+                        //     top: 3px;
+                        //     @include responsive-font-size(12px);
+                        // }
+                    }
+                }
+                
+            }
+
+        }
     }
-}
-/* end Aside-Home */
+    /* end Aside-Home */
 
 }
 /* end Session Objective */
@@ -394,15 +449,21 @@
 }
 /* end CTA Slide */
 .imc {
-    background-color: gray;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(27,27,55,1) 50%, rgba(34,34,50,1) 100%); 
     background-position: center;
     background-size: cover;
-    height: 500px;
+    height: 400px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // display: none;
 
     &__form {
         max-width: 700px;
-        background-color: #222232;
+        // background-color: #222232;
+        background-color: transparent;
         display: flex;
         flex-direction: column;
         align-items: center;

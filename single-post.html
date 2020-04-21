@@ -169,6 +169,8 @@
                                 </section>
                                 <!-- end Posts Relacionados -->
 
+                                <div class="divisor"></div>
+
                                 <!-- Comments -->
                                 <section class="singlePost__main__article__comments">
                                     <h3>Leave a reply</h3>
@@ -176,29 +178,29 @@
                                     <form action="#" class="form">
                                         <p>Your email address will not be published. Required fields are marked *</p>
 
-                                        <div>
+                                        <div class="form-group">
                                             <label for="comentario">Comentário</label>
                                             <textarea cols="45" rows="8"></textarea>
                                         </div>
 
-                                        <div>
-                                            <label for="nome">Nome *</label>
-                                            <input type="text" name="nome">
-                                        </div>
+                                        
+                                        <div class="row form-info">
 
-                                        <div>
-                                            <label for="email">Email *</label>
-                                            <input type="email" name="email">
-                                        </div>
+                                            <div class="col-md-6">
+                                                <label for="nome">Nome *</label>
+                                                <input type="text" name="nome">
+                                            </div>
 
-                                        <div>
-                                            <label for="website">Website</label>
-                                            <input type="text" name="website">
-                                        </div>
+                                            <div class="col-md-6 ">
+                                                <label for="email">Email *</label>
+                                                <input type="email" name="email">
+                                            </div>
 
-                                        <div>
-                                            <input type="checkbox">
-                                            <label for="checkbox">Save my name, email, and website in this browser for the next time I comment.</label>
+                                            <div class="col-md-12 checkbox-save">
+                                                <input type="checkbox" class="save">
+                                                <label for="checkbox">Save my name, email, and website in this browser for the next time I comment.</label>
+                                            </div>
+
                                         </div>
 
                                         <button type="submit" class="form-btn">Enviar Comentário</button>
@@ -215,7 +217,7 @@
 
                 </section>
 
-                
+
                 <aside class="col-md-4 category__posts__aside-home">
                     <div class="category__posts__aside-home__block-title">
                         <h2>Find your class</h2>

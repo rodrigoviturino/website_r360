@@ -1,6 +1,8 @@
 .header{
     border-top: solid 4px #fc993d;
-    padding: map-get($spacers, 4);;
+    // padding: map-get($spacers, 4);
+    padding: map-get($spacers, 3) map-get($spacers, 0);
+    background-color: #242424;
 
     &__wrapper {
         display: flex;
@@ -13,6 +15,8 @@
         
             &-logo {
                 transition: all 0.7s;
+                width: 70px;
+                height: 70px;
 
                 &:hover {
                     transition: all 0.7s;
@@ -29,20 +33,50 @@
                     list-style: none;
 
                     a {
-                        color: #333a65;
+                        // color: #333a65;
+                        color: rgb(243, 243, 243);
                         text-decoration: none;
                         transition: all 0.7s;
+                        display: inline-block;
                         font-weight: 400;
                         padding: 0 map-get($spacers, 2);
                         margin: 0 map-get($spacers, 3);
+                        border-bottom: solid 2px transparent;
+                        position: relative;
                         @include responsive-font-size(17px);
-
+                        
+                        
                         &:hover {
-                            background-color: #c9c9c9;
-                            transition: all 0.7s;
+                            
+                            &::after {
+                                width: 100%;
+                                transition: width .5s;
+                                background-color: $orange;
+
+                            }
                         }
+
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 2px;
+                            background: #fff;
+                            transition: width .5s;
+                        }                                
+                            
                     }
                 }
             }
+
+        .fa-search  {
+            color: $orange;
+            transition: all .5s;
+
+            &:hover {
+                color: $white;
+                transition: all .5s;
+            }
+        }
     }
 }
